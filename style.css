@@ -1,0 +1,54 @@
+.box-all{
+    height: 450px;
+    width: 60%;
+    background-color: salmon;
+}
+
+.imgFit{
+    /* width: 70%;
+    height: auto; */
+    object-fit: contain;
+}
+
+.left-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-pink{
+    background-color: pink;
+}
+
+.btn-box{
+    width: 60px;
+    margin: 10px 10px;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+.full-width{
+    width:100%;
+    flex-shrink: 0;
+}
+
+.deplete-animation{
+    animation: deplete 1.5s linear forwards;
+}
+
+.expand-animation{
+    animation: deplete 1.5s linear reverse forwards;
+}
+
+@keyframes deplete {
+    0%{
+        width: 100%;
+        opacity: 1;
+    }
+    100%{
+        width: 0%;
+        opacity: 0;
+    } 
+}
